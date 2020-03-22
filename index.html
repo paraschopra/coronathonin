@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="India's COVID-19 Online Hackathon">
+  
+
+    <title>India's COVID-19 Online Hackathon</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/corona.png" type="image/x-icon">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+
+    <style type="text/css" id="custom-fonts">
+      /* custom fonts */
+    @font-face {font-family: 'Roboto Regular';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.ttf') format('truetype');}
+    @font-face {font-family: 'Roboto Medium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.woff') format('woff');}
+    @font-face {font-family: 'Roboto Bold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.woff') format('woff');}
+    @font-face {font-family: 'Apercu Regular';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.woff') format('woff');}
+    @font-face {font-family: 'Apercu Medium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.woff') format('woff');}
+    @font-face {font-family: 'Apercu Bold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.woff') format('woff');}
+    @font-face {font-family: 'Sharp Sans Regular';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.woff') format('woff');}
+    @font-face {font-family: 'Sharp Sans Medium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.woff') format('woff');}
+    @font-face {font-family: 'Sharp Sans Bold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.woff') format('woff');}
+    @font-face {font-family: 'FreigSanProBold';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.otf') format('opentype');}
+    @font-face {font-family: 'FreigSanProMed';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.otf') format('opentype');}
+    @font-face {font-family: 'FaktSlabProMedium';src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.otf') format('opentype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.eot') format('eot');}
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            Menu <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand page-scroll text-center" href="#page-top">
+            <img id="everloop" src="img/corona.png"/> <span class="hidden-xs hidden-sm "><span class="light">Coronathon</span> for 🇮🇳 India</span>
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#about">What is it?</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#format">Format</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#participate">Participate</a>
+            </li>
+            <li><a class="page-scroll" href="#projects">Projects</a></li>
+            <li>
+              <a class="page-scroll" href="#organizers">Organizers</a>
+            </li>
+      
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="intro">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-12">
+              <h1 class="brand-heading">🇮🇳 India's COVID-19 Online Hackathon</h1>
+              <p class="intro-text">Join other people from India's tech, business and healthcare community and build projects to help minimize COVID-19's impact on India 
+              </p>
+              <a href="#about" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2>What is it?</h2>
+          <p>COVID-19 poses a grave danger to India because of our high population density and <a href="https://gumlet.assettype.com/bloombergquint%2F2020-03%2F71e05b2a-15cc-4930-83b9-be22357e2093%2FHealthcare_Is_Less_Abundant_In_India_Compared_To_Global_Average.png?auto=format&q=35&w=1200&h=979">abysmally low number of hospital beds per 100 people</a>. In the worst case, India’s coronavirus infections may be just getting started and we may be looking at a tsunami of cases in the weeks ahead. It’s encouraging to see the Indian government take necessary steps such as “Junta Curfew” and indian corporates switch to Work From Home. However, until we have a vaccine, infections can flare up anytime, anywhere. Current estimates suggest that we’re 12 months away from a vaccine, so we may be in for a long time to face multiple widespread disruptions due to either infections overwhelming our healthcare capacity or due to social-distancing induced economic slowdown.</p>
+
+            <p>So, we are asking the Indian tech community to come together and collaborate to build projects that can help other Indians during the COVID-19 pandemic.
+            
+            </p>
+
+            <p><a href="https://join.slack.com/t/coronathonin/shared_invite/zt-cthzh6de-OnIMPgbqtN1SlgGwcuTmpw">Participate in the hackathon by join the slack group</a></p>
+          </div>
+        </div>
+      </section>
+            
+      <section id="format" class="darker-black content-section">
+              <div class="download-section">
+                <div class="container">
+                  <div class="col-lg-8 col-lg-offset-2">
+                    <h2 class="text-center">Format</h2>
+                    
+                    <ul>
+                    <li>Hackathon will run starting 22 March 2020 (Sunday) and continue running until the COVID-19 situation stabilizes</li>
+                    <li>Teams will get formed online and hackathon will happen virtually. A platform like Slack is needed for people to discuss projects and form teams</li>
+                    <li>Each week it’s expected that teams will work on their projects after work time and during weekends</li>
+                  <li>There will be a demo day every Sunday evening where finished and work in progress projects will be demonstrated to a group of audience</li> 
+                    <li>Demo day will be moderated by the hackathon organizing team but anyone is free to join to see projects</li>
+                    <li>During the demo day, the organizing team and advisors will help any promising project with financial help or resources or guidance</li>
+                  <li>Prizes: To be Decided</li>
+                
+                  </ul>
+
+           
+
+        </div>
+      </div>
+    </section>
+
+    <!-- General Rules Section -->
+    <section id="participate" class="content-section">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2>Participate</h2>
+
+            <p>This hackathon is happening online via a Slack Group that <a href="https://join.slack.com/t/coronathonin/shared_invite/zt-cthzh6de-OnIMPgbqtN1SlgGwcuTmpw">you can join via this link</a>.</p>
+            <p><strong>We encourage you to participate if:</strong></p>
+            <p><ul>
+              <li>If you have a project idea but need a team to execute it</li>
+              <li>If you have certain skills but need projects to contribute to</li>
+              <li>If you can donate resources (like hosting, domain names or equipment)</li>
+            </ul></p>
+            
+
+            <p><strong>Who can participate?</strong></p>
+                    <ul>
+                      <li>Coders / Software Engineers</li>
+                      <li>Hardware Engineers</li>
+                      <li>Designers</li>
+                      <li>Business People / Product Managers</li>
+                      <li>Marketers</li>
+                      <li>Heathcare providers - Doctors / Experts
+                        </li>
+                  </ul>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="projects" class="darker-black content-section text-center">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2>Projects</h2>
+            <p style="text-align:left"><strong>Ongoing projects</strong></p>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12" style="color:green">Project name</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12" style="color:green">Description</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12" style="color:green">URL</div>
+              </div>
+            </div>
+            <div class="agenda">
+              <div class="row">
+                <div class="when col-lg-4 col-md-4 col-sm-12 col-xs-12">Coronathon.in</div>
+                <div class="where col-lg-4 col-md-4 col-sm-12 col-xs-12">This website</div>
+                <div class="what col-lg-4 col-md-4 col-sm-12 col-xs-12"><a href="https://coronathon.in">coronathon.in</a></div>
+              </div>
+            </div>
+
+           <p>&nbsp;</p>
+
+           <p style="text-align:left"><strong>Get inspired by other projects</strong></p>
+
+
+           <p style="text-align:left">Go through the list of volunteer-run projects related to COVID-19 on <a href="https://helpwithcovid.com/">Help With Covid</a> or see if any of the following themes spark an idea:</p>
+           
+<ul style="text-align: left">
+  
+<li>Disease Tracking</li>
+<li>Disease path tracking</li>
+<li>Contact Tracking / People Movement</li>
+<li>Disease Treatment Pathways</li>
+<li>Disease Prediction</li>
+<li>Community Maps of spread</li>
+<li>Social Distancing enablement</li>
+<li>Supplies aggregator</li>
+<li>Supplies tracker across stores / brands</li>
+<li>List of supplies for different households</li>
+<li>Neighbor watch program</li>
+<li>Online education for kids</li>
+<li>Share internet bandwidth across neighborhoods</li>
+<li>Map of free wifis</li>
+<li>Supplies for underprivileged</li>
+<li>Fake news vs Real news identification</li>
+<li>Economic support to people unable to support themselves</li>
+<li>Aggregating economic support for people unable to work</li> 
+<li>Aggregating testing kits</li>
+<li>Support to medical community</li>
+<li>Aggregating donations to buy medical supplies for healthcare community</li>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="organizers" class="content-section">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2 class="text-center">Organizers</h2>
+            <p>
+              <a href="https://twitter.com/paraschopra"><strong>Paras Chopra</strong></a>, <a href="https://wingify.com/">Wingify</a></br>
+              <a href="https://twitter.com/sparshgupta"><strong>Sparsh Gupta</strong></a>, <a href="https://wingify.com/">Wingify</a> </br>
+            </p>
+            <p>
+              We need more people in the organizing team. To join it, <a href="https://join.slack.com/t/coronathonin/shared_invite/zt-cthzh6de-OnIMPgbqtN1SlgGwcuTmpw">join the slack group</a> for the hackathon and message any of the organizers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <!-- Contact Section -->
+    <section id="contact" class="darker-black container content-section text-center">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2>Coronathon.in - 🇮🇳 India's COVID-19 Online Hackathon</h2>
+          <p>Feel free to get in touch with us.</p>
+          <p><a href="mailto:paras1987+coronathon@gmail.com">Email us</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p><a href="https://join.slack.com/t/coronathonin/shared_invite/zt-cthzh6de-OnIMPgbqtN1SlgGwcuTmpw">Slack Group for the Hackathon</a></p>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe7xQb1YWBLPDqFYAKE4G8_ysGyfuYyPg"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+  </body>
+</html>
